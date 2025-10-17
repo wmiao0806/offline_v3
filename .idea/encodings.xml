@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/stream-prod/custom-func/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/custom-func/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-deploy/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-deploy/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-ml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-ml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-realtime/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-prod/stream-realtime/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream_prod/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream_prod/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream_prod/src/main/scala" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream_prod/stream_common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream_prod/stream_common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream_prod/stream_realtime/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream_prod/stream_realtime/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/stream_realtime_0926/src/main/java" charset="UTF-8" />

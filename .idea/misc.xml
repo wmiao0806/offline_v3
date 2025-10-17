@@ -6,10 +6,16 @@
       <list>
         <option value="$PROJECT_DIR$/stream_realtime_0926/pom.xml" />
         <option value="$PROJECT_DIR$/stream_prod/pom.xml" />
+        <option value="$PROJECT_DIR$/sstream-prod/pom.xml" />
+        <option value="$PROJECT_DIR$/stream-prod/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/sstream-prod/pom.xml" />
+        <option value="$PROJECT_DIR$/stream_prod/pom.xml" />
+        <option value="$PROJECT_DIR$/stream_prod/stream_common/pom.xml" />
+        <option value="$PROJECT_DIR$/stream_prod/stream_realtime/pom.xml" />
         <option value="$PROJECT_DIR$/stream_realtime_0926/pom.xml" />
       </set>
     </option>
