@@ -1,0 +1,70 @@
+-- 在 Hive 中创建对 MySQL 的外部表（示例：ods_logs）
+CREATE EXTERNAL TABLE if not exists ods_logs_jdbc (
+  id BIGINT,
+  shop_no STRING,
+  user_id STRING,
+  product_id STRING,
+  event_time TIMESTAMP,
+  duration_seconds INT,
+  is_bounce INT,
+  referer STRING,
+  ds DATE
+)
+STORED BY 'org.apache.hive.storage.jdbc.JdbcStorageHandler'
+TBLPROPERTIES (
+  "hive.sql.database.type" = "MYSQL",
+  "hive.sql.table" = "ods_logs",
+  "hive.sql.url" = "jdbc:mysql://YOUR_MYSQL_HOST:3306/testdb",
+  "hive.sql.username" = "root",
+  "hive.sql.password" = "password",
+  "hive.sql.driver" = "com.mysql.cj.jdbc.Driver"
+);
+
+-- 类似方式建 dim_favorite_jdbc, dim_cart_jdbc, order_info_jdbc, order_detail_jdbc
+CREATE EXTERNAL TABLE dim_favorite_jdbc (
+  id BIGINT, user_id STRING, product_id STRING, shop_no STRING, favor_time TIMESTAMP, ds DATE
+)
+STORED BY 'org.apache.hive.storage.jdbc.JdbcStorageHandler'
+TBLPROPERTIES (
+  "hive.sql.table" = "dim_favorite",
+  "hive.sql.url" = "jdbc:mysql://YOUR_MYSQL_HOST:3306/testdb",
+  "hive.sql.username" = "root",
+  "hive.sql.password" = "password",
+  "hive.sql.driver" = "com.mysql.cj.jdbc.Driver"
+);
+
+CREATE EXTERNAL TABLE dim_cart_jdbc (
+  id BIGINT, user_id STRING, product_id STRING, shop_no STRING, qty INT, add_time TIMESTAMP, ds DATE
+)
+STORED BY 'org.apache.hive.storage.jdbc.JdbcStorageHandler'
+TBLPROPERTIES (
+  "hive.sql.table" = "dim_cart",
+  "hive.sql.url" = "jdbc:mysql://YOUR_MYSQL_HOST:3306/testdb",
+  "hive.sql.username" = "root",
+  "hive.sql.password" = "password",
+  "hive.sql.driver" = "com.mysql.cj.jdbc.Driver"
+);
+
+CREATE EXTERNAL TABLE order_info_jdbc (
+  id BIGINT, order_no STRING, user_id STRING, shop_no STRING, order_time TIMESTAMP, pay_time TIMESTAMP, status STRING, total_amount DECIMAL(12,2), ds DATE
+)
+STORED BY 'org.apache.hive.storage.jdbc.JdbcStorageHandler'
+TBLPROPERTIES (
+  "hive.sql.table" = "order_info",
+  "hive.sql.url" = "jdbc:mysql://YOUR_MYSQL_HOST:3306/testdb",
+  "hive.sql.username" = "root",
+  "hive.sql.password" = "password",
+  "hive.sql.driver" = "com.mysql.cj.jdbc.Driver"
+);
+
+CREATE EXTERNAL TABLE order_detail_jdbc (
+  id BIGINT, order_id BIGINT, product_id STRING, shop_no STRING, sku_color STRING, sku_size STRING, qty INT, unit_price DECIMAL(12,2), amount DECIMAL(12,2)
+)
+STORED BY 'org.apache.hive.storage.jdbc.JdbcStorageHandler'
+TBLPROPERTIES (
+  "hive.sql.table" = "order_detail",
+  "hive.sql.url" = "jdbc:mysql://YOUR_MYSQL_HOST:3306/testdb",
+  "hive.sql.username" = "root",
+  "hive.sql.password" = "password",
+  "hive.sql.driver" = "com.mysql.cj.jdbc.Driver"
+);

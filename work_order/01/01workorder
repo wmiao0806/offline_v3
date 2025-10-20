@@ -1,0 +1,51 @@
+需求拆解：
+
+PRD>任务需求指标说明书
+商品主题
+查看店铺内商品的访问、收藏、加购、销售情况
+    -访问基于日志过来的数据维度到店铺&用户(是否去重)ods_logs,dim->stron_no,useriduspv
+        user1202510176pv -> 1 价格敏感型用户
+        user2202510171pv ->1激情购买用户
+        user3 20251017 4pv -> 0 路过
+    - 收藏dim-> userid,ds,product_id(color_no,size_no,item_id)
+    - 加购谁在什么时间把什么东西加入了购物车
+    - 销售order_info + order_detail-> order_info.id= order_detail.order_id
+
+商品效率监控
+    统计周期维度->实时和离线offline+online
+    维度全店(店铺stron_no)
+    各时间维度下全店商品销售趋势每1h统计一次
+    统计周期时间1d(h)7d15d30ddws最细粒度是小时&d
+
+    - 支付转换率支付转化率=支付买家数/商品访客数(product_id,productid_sale_num,productid_pv)
+    - 价格带/支付件数/支付金额进行区间划分
+    
+        1.价格带每个价格区间内的支付件数和支付金额
+    - 商品访客数
+    - 商品浏览量
+    - 有访问商品数
+    - 商品平均停留时长
+    - 商品详情页跳出率
+    - 商品收藏人数
+    - 商品加购件数
+    - 商品加购人数
+    - 访问收藏转化率
+    - 访问加购转化率
+    - 下单买家数
+    - 下单件数
+    - 下单金额
+    - 下单转化率
+    - 支付买家数
+    - 支付件数
+    - 支付金额
+    - 有支付商品数
+    - 商品支付转化率
+
+result table
+    insert overwrite table ads_product_result_dtl(dt='${bizdate}')
+        select *,指标
+        from t1 
+        join t2
+        on t1.xx = t2.xx
+        join t3
+        on t2.xx = t3.xx
