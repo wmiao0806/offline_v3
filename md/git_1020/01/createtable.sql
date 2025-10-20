@@ -137,3 +137,5 @@ FULL OUTER JOIN order_join o
   ON coalesce(pv.shop_no,f.shop_no,c.shop_no) = o.shop_no AND coalesce(pv.product_id,f.product_id,c.product_id) = o.product_id AND coalesce(pv.stat_hour,f.stat_hour,c.stat_hour) = o.stat_hour
 FULL OUTER JOIN pay_join p
   ON coalesce(pv.shop_no,f.shop_no,c.shop_no,o.shop_no) = p.shop_no AND coalesce(pv.product_id,f.product_id,c.product_id,o.product_id) = p.product_id AND coalesce(pv.stat_hour,f.stat_hour,c.stat_hour,o.stat_hour) = p.stat_hour;
+
+
