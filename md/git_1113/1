@@ -1,0 +1,563 @@
+"C:\Program Files\Java\jdk1.8.0_131\bin\java.exe" "-javaagent:D:\App\idea2023\IntelliJ IDEA 2023.2.2\lib\idea_rt.jar=59754:D:\App\idea2023\IntelliJ IDEA 2023.2.2\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\29065\AppData\Local\Temp\classpath2051235632.jar work1113.SqlServerCDCReaderFixed
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils:setConfigOptionToDefaultIfNotSet) - The configuration option taskmanager.cpu.cores required for local execution is not set, setting it to the maximal possible value.
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils:setConfigOptionToDefaultIfNotSet) - The configuration option taskmanager.memory.task.heap.size required for local execution is not set, setting it to the maximal possible value.
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils:setConfigOptionToDefaultIfNotSet) - The configuration option taskmanager.memory.task.off-heap.size required for local execution is not set, setting it to the maximal possible value.
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils:setConfigOptionToDefaultIfNotSet) - The configuration option taskmanager.memory.network.min required for local execution is not set, setting it to its default value 64 mb.
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils:setConfigOptionToDefaultIfNotSet) - The configuration option taskmanager.memory.network.max required for local execution is not set, setting it to its default value 64 mb.
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtils:setConfigOptionToDefaultIfNotSet) - The configuration option taskmanager.memory.managed.size required for local execution is not set, setting it to its default value 128 mb.
+2025-11-13 19:42:18       INFO (org.apache.flink.runtime.minicluster.MiniCluster:start) - Starting Flink Mini Cluster
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.minicluster.MiniCluster:start) - Starting Metrics Registry
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.metrics.MetricRegistryImpl:<init>) - No metrics reporter configured, no metrics will be exposed/reported.
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.minicluster.MiniCluster:start) - Starting RPC Service(s)
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils:startLocalActorSystem) - Trying to start local actor system
+2025-11-13 19:42:19       INFO (akka.event.slf4j.Slf4jLogger:applyOrElse) - Slf4jLogger started
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils:startActorSystem) - Actor system started at akka://flink
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils:startLocalActorSystem) - Trying to start local actor system
+2025-11-13 19:42:19       INFO (akka.event.slf4j.Slf4jLogger:applyOrElse) - Slf4jLogger started
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcServiceUtils:startActorSystem) - Actor system started at akka://flink-metrics
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcService:startServer) - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at akka://flink-metrics/user/rpc/MetricQueryService .
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:loadProviders) - Loading delegation token providers
+2025-11-13 19:42:19       WARN (org.apache.flink.runtime.util.HadoopUtils:getHadoopConfiguration) - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2025-11-13 19:42:19       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:lambda$loadProviders$0) - Delegation token provider hadoopfs loaded and initialized
+2025-11-13 19:42:19       WARN (org.apache.flink.runtime.util.HadoopUtils:getHadoopConfiguration) - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:lambda$loadProviders$0) - Delegation token provider hbase loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:lambda$loadProviders$0) - Delegation token provider s3-hadoop loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:loadProviders) - Delegation token providers loaded successfully
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:loadReceivers) - Loading delegation token receivers
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:lambda$loadReceivers$0) - Delegation token receiver hadoopfs loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:lambda$loadReceivers$0) - Delegation token receiver hbase loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:lambda$loadReceivers$0) - Delegation token receiver s3-hadoop loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:loadReceivers) - Delegation token receivers loaded successfully
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:checkProviderAndReceiverConsistency) - Checking provider and receiver instances consistency
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:checkProviderAndReceiverConsistency) - Provider and receiver instances are consistent
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:obtainDelegationTokens) - Obtaining delegation tokens
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:obtainDelegationTokens) - Delegation tokens obtained successfully
+2025-11-13 19:42:20       WARN (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:obtainDelegationTokens) - No tokens obtained so skipping notifications
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:loadReceivers) - Loading delegation token receivers
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:lambda$loadReceivers$0) - Delegation token receiver hadoopfs loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:lambda$loadReceivers$0) - Delegation token receiver hbase loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:lambda$loadReceivers$0) - Delegation token receiver s3-hadoop loaded and initialized
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository:loadReceivers) - Delegation token receivers loaded successfully
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.blob.BlobServer:<init>) - Created BLOB server storage directory C:\Users\29065\AppData\Local\Temp\minicluster_54f42db5dd618ca11404407c2e12678e\blobStorage
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.blob.BlobServer:<init>) - Started BLOB server at 0.0.0.0:59771 - max concurrent requests: 50 - max backlog: 1000
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.blob.PermanentBlobCache:<init>) - Created BLOB cache storage directory C:\Users\29065\AppData\Local\Temp\minicluster_54f42db5dd618ca11404407c2e12678e\blobStorage
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.blob.TransientBlobCache:<init>) - Created BLOB cache storage directory C:\Users\29065\AppData\Local\Temp\minicluster_54f42db5dd618ca11404407c2e12678e\blobStorage
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.minicluster.MiniCluster:startTaskManagers) - Starting 1 TaskManager(s)
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.taskexecutor.TaskManagerRunner:startTaskManager) - Starting TaskManager with ResourceID: de5d94df-f72a-40ce-abf9-57cac5d69bd8
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.taskexecutor.TaskManagerServices:checkTempDirs) - Temporary file directory 'C:\Users\29065\AppData\Local\Temp': total 200 GB, usable 15 GB (7.50% usable)
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.io.disk.iomanager.IOManager:<init>) - Created a new FileChannelManager for spilling of task related data to disk (joins, sorting, ...). Used directories:
+	C:\Users\29065\AppData\Local\Temp\flink-io-a4596971-e4a1-4c21-9e63-b74b9eeae048
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.io.network.NettyShuffleServiceFactory:createNettyShuffleEnvironment) - Created a new FileChannelManager for storing result partitions of BLOCKING shuffles. Used directories:
+	C:\Users\29065\AppData\Local\Temp\flink-netty-shuffle-7f74ea68-1a6b-46a3-af4c-ebd12a5bd662
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.io.network.buffer.NetworkBufferPool:<init>) - Allocated 64 MB for network buffer pool (number of memory segments: 2048, bytes per segment: 32768).
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.io.network.NettyShuffleEnvironment:start) - Starting the network environment and its components.
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.taskexecutor.KvStateService:start) - Starting the kvState service and its components.
+2025-11-13 19:42:20       INFO (org.apache.flink.configuration.Configuration:loggingFallback) - Config uses fallback configuration key 'akka.ask.timeout' instead of key 'taskmanager.slot.timeout'
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcService:startServer) - Starting RPC endpoint for org.apache.flink.runtime.taskexecutor.TaskExecutor at akka://flink/user/rpc/taskmanager_0 .
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService:start) - Start job leader service.
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.filecache.FileCache:<init>) - User file cache uses directory C:\Users\29065\AppData\Local\Temp\flink-dist-cache-33d594ee-8ae0-492b-96ea-8d8319b41fea
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint:start) - Starting rest endpoint.
+2025-11-13 19:42:20       INFO (org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint:initializeWebSubmissionHandlers) - Failed to load web based job submission extension. Probable reason: flink-runtime-web is not in the classpath.
+2025-11-13 19:42:20       WARN (org.apache.flink.runtime.webmonitor.WebMonitorUtils:find) - Log file environment variable 'log.file' is not set.
+2025-11-13 19:42:20       WARN (org.apache.flink.runtime.webmonitor.WebMonitorUtils:find) - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint:start) - Rest endpoint listening at localhost:59849
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:updateLeader) - Proposing leadership to contender http://localhost:59849
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint:grantLeadership) - http://localhost:59849 was granted leadership with leaderSessionID=a740cc37-bcdb-4aeb-8c04-7a19d401c64c
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:confirmLeader) - Received confirmation of leadership for leader http://localhost:59849 , session=a740cc37-bcdb-4aeb-8c04-7a19d401c64c
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:updateLeader) - Proposing leadership to contender LeaderContender: DefaultDispatcherRunner
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl:start) - Starting resource manager service.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:updateLeader) - Proposing leadership to contender LeaderContender: ResourceManagerServiceImpl
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunner:lambda$grantLeadership$0) - DefaultDispatcherRunner was granted leadership with leader id 6aaba609-52b0-49d4-aeb5-15c80fbe03cf. Creating new DispatcherLeaderProcess.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl:lambda$grantLeadership$2) - Resource manager service is granted leadership with session id a5950452-7905-4aca-a58d-3f66c311c59b.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.minicluster.MiniCluster:start) - Flink Mini Cluster started successfully
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess:startInternal) - Start SessionDispatcherLeaderProcess.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess:recoverJobs) - Recover all persisted job graphs that are not finished, yet.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess:recoverJobs) - Successfully recovered 0 persisted job graphs.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcService:startServer) - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at akka://flink/user/rpc/resourcemanager_1 .
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcService:startServer) - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at akka://flink/user/rpc/dispatcher_2 .
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.StandaloneResourceManager:onStart) - Starting the resource manager.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:startTokensUpdate) - Starting tokens update task
+2025-11-13 19:42:22       WARN (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:startTokensUpdate) - No tokens obtained so skipping notifications
+2025-11-13 19:42:22       WARN (org.apache.flink.runtime.security.token.DefaultDelegationTokenManager:startTokensUpdate) - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:confirmLeader) - Received confirmation of leadership for leader akka://flink/user/rpc/dispatcher_2 , session=6aaba609-52b0-49d4-aeb5-15c80fbe03cf
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:confirmLeader) - Received confirmation of leadership for leader akka://flink/user/rpc/resourcemanager_1 , session=a5950452-7905-4aca-a58d-3f66c311c59b
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:connectToResourceManager) - Connecting to ResourceManager akka://flink/user/rpc/resourcemanager_1(a58d3f66c311c59ba595045279054aca).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:lambda$startRegistration$0) - Resolved ResourceManager address, beginning registration
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.StandaloneDispatcher:submitJob) - Received JobGraph submission 'Flink SQL Server CDC Job - Fixed' (8144702650806b6e6234320f3a2dfd53).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.StandaloneResourceManager:registerTaskExecutorInternal) - Registering TaskManager with ResourceID de5d94df-f72a-40ce-abf9-57cac5d69bd8 (akka://flink/user/rpc/taskmanager_0) at ResourceManager
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.dispatcher.StandaloneDispatcher:internalSubmitJob) - Submitting job 'Flink SQL Server CDC Job - Fixed' (8144702650806b6e6234320f3a2dfd53).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:onRegistrationSuccess) - Successful registration at resource manager akka://flink/user/rpc/resourcemanager_1 under registration id 7ede6fa2d42bdf8445aa968b8157f041.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:updateLeader) - Proposing leadership to contender LeaderContender: JobMasterServiceLeadershipRunner
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMasterServiceLeadershipRunner:createNewJobMasterServiceProcess) - JobMasterServiceLeadershipRunner for job 8144702650806b6e6234320f3a2dfd53 was granted leadership with leader id 1543d571-cf51-4395-b251-8dec4d45e8f1. Creating new JobMasterServiceProcess.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.rpc.akka.AkkaRpcService:startServer) - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at akka://flink/user/rpc/jobmanager_3 .
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:<init>) - Initializing job 'Flink SQL Server CDC Job - Fixed' (8144702650806b6e6234320f3a2dfd53).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:createInstance) - Using restart back off time strategy FixedDelayRestartBackoffTimeStrategy(maxNumberRestartAttempts=2147483647, backoffTimeMS=1000) for Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:<init>) - Created execution graph 85f9348cc4ab1171b4eaef91ddca3bd5 for job 8144702650806b6e6234320f3a2dfd53.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:buildGraph) - Running initialization on master for job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:buildGraph) - Successfully ran initialization on master in 0 ms.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology:generateNewPipelinedRegions) - Built 1 new pipelined regions in 2 ms, total 1 pipelined regions currently.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:loadFromApplicationOrConfigOrDefaultInternal) - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@49012a6d
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.state.StateBackendLoader:fromApplicationOrConfigOrDefault) - State backend loader loads the state backend as HashMapStateBackend
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:createJobManagerCheckpointStorage) - Checkpoint storage is set to 'jobmanager'
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.checkpoint.CheckpointCoordinator:restoreLatestCheckpointedStateInternal) - No checkpoint found during restore.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:<init>) - Using failover strategy org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategy@e40ce4 for Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53).
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderService:confirmLeader) - Received confirmation of leadership for leader akka://flink/user/rpc/jobmanager_3 , session=1543d571-cf51-4395-b251-8dec4d45e8f1
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:startJobExecution) - Starting execution of job 'Flink SQL Server CDC Job - Fixed' (8144702650806b6e6234320f3a2dfd53) under job master id b2518dec4d45e8f11543d571cf514395.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:startSchedulingInternal) - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53) switched from state CREATED to RUNNING.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from CREATED to SCHEDULED.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:connectToResourceManager) - Connecting to ResourceManager akka://flink/user/rpc/resourcemanager_1(a58d3f66c311c59ba595045279054aca)
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:lambda$startRegistration$0) - Resolved ResourceManager address, beginning registration
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.StandaloneResourceManager:registerJobMaster) - Registering job manager b2518dec4d45e8f11543d571cf514395@akka://flink/user/rpc/jobmanager_3 for job 8144702650806b6e6234320f3a2dfd53.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.checkpoint.CheckpointFailureManager:handleCheckpointException) - Failed to trigger checkpoint for job 8144702650806b6e6234320f3a2dfd53 since Checkpoint triggering task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) of job 8144702650806b6e6234320f3a2dfd53 is not being executed at the moment. Aborting checkpoint. Failure reason: Not all required tasks are currently running..
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.StandaloneResourceManager:registerJobMasterInternal) - Registered job manager b2518dec4d45e8f11543d571cf514395@akka://flink/user/rpc/jobmanager_3 for job 8144702650806b6e6234320f3a2dfd53.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.jobmaster.JobMaster:establishResourceManagerConnection) - JobManager successfully registered at ResourceManager, leader id: a58d3f66c311c59ba595045279054aca.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager:processResourceRequirements) - Received resource requirements from job 8144702650806b6e6234320f3a2dfd53: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:requestSlot) - Receive slot request c60ebe3d21a4ba2ba6ff16784f262b74 for job 8144702650806b6e6234320f3a2dfd53 from resource manager with leader id a58d3f66c311c59ba595045279054aca.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:allocateSlot) - Allocated slot for c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService:addJob) - Add job 8144702650806b6e6234320f3a2dfd53 for job leader monitoring.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService:openRpcConnectionTo) - Try to register at job manager akka://flink/user/rpc/jobmanager_3 with leader id 1543d571-cf51-4395-b251-8dec4d45e8f1.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService:lambda$startRegistration$0) - Resolved JobManager address, beginning registration
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService:lambda$onRegistrationSuccess$0) - Successful registration at job manager akka://flink/user/rpc/jobmanager_3 for job 8144702650806b6e6234320f3a2dfd53.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:establishJobManagerConnection) - Establish JobManager connection for job 8144702650806b6e6234320f3a2dfd53.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:internalOfferSlotsToJobManager) - Offer reserved slots to the leader of job 8144702650806b6e6234320f3a2dfd53.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from SCHEDULED to DEPLOYING.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:deploy) - Deploying Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (attempt #0) with attempt id 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to de5d94df-f72a-40ce-abf9-57cac5d69bd8 @ 127.0.0.1 (dataPort=-1) with allocation id c60ebe3d21a4ba2ba6ff16784f262b74
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl:markExistingSlotActive) - Activate slot c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.state.changelog.StateChangelogStorageLoader:initialize) - StateChangelogStorageLoader initialized with shortcut names {memory}.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.state.changelog.StateChangelogStorageLoader:load) - Creating a changelog storage with name 'memory'.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.state.TaskExecutorChannelStateExecutorFactoryManager:getOrCreateExecutorFactory) - Creating the channel state executor factory for job id 8144702650806b6e6234320f3a2dfd53
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:submitTask) - Received task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0), deploy into slot with allocation id c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from CREATED to DEPLOYING.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl:markExistingSlotActive) - Activate slot c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskmanager.Task:doRun) - Loading JAR files for task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) [DEPLOYING].
+2025-11-13 19:42:22       INFO (org.apache.flink.streaming.runtime.tasks.StreamTask:loadFromApplicationOrConfigOrDefaultInternal) - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@7593813c
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.state.StateBackendLoader:fromApplicationOrConfigOrDefault) - State backend loader loads the state backend as HashMapStateBackend
+2025-11-13 19:42:22       INFO (org.apache.flink.streaming.runtime.tasks.StreamTask:createJobManagerCheckpointStorage) - Checkpoint storage is set to 'jobmanager'
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from DEPLOYING to INITIALIZING.
+2025-11-13 19:42:22       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from DEPLOYING to INITIALIZING.
+2025-11-13 19:42:22       INFO (com.ververica.cdc.debezium.DebeziumSourceFunction:initializeState) - Consumer subtask 0 has no restore state.
+2025-11-13 19:42:23       WARN (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from INITIALIZING to FAILED with failure cause:
+org.apache.flink.table.api.TableException: Unexpected error while connecting to SqlServer and validating
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:54)
+	at com.ververica.cdc.debezium.DebeziumSourceFunction.open(DebeziumSourceFunction.java:214)
+	at org.apache.flink.api.common.functions.util.FunctionUtils.openFunction(FunctionUtils.java:34)
+	at org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator.open(AbstractUdfStreamOperator.java:101)
+	at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:734)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$SynchronizedStreamTaskActionExecutor.call(StreamTaskActionExecutor.java:100)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:709)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:675)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:921)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: “Encrypt”属性设置为“true”且 “trustServerCertificate”属性设置为“false”，但驱动程序无法使用安全套接字层 (SSL) 加密与 SQL Server 建立安全连接:错误:sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。 ClientConnectionId:94e1284a-8f95-4715-9296-69697b40ad30
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:4026)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1954)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3552)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.openConnection(SqlServerValidator.java:88)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:47)
+	... 13 more
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1843)
+	... 22 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.microsoft.sqlserver.jdbc.HostNameOverrideX509TrustManager.checkServerTrusted(SQLServerTrustManager.java:88)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 30 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 38 more
+2025-11-13 19:42:23       INFO (org.apache.flink.runtime.taskmanager.Task:doRun) - Freeing task resources for Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0).
+2025-11-13 19:42:23       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:unregisterTaskAndNotifyFinalState) - Un-registering task and sending final execution state FAILED to JobManager for task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#0 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0.
+2025-11-13 19:42:23       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from INITIALIZING to FAILED on de5d94df-f72a-40ce-abf9-57cac5d69bd8 @ 127.0.0.1 (dataPort=-1).
+org.apache.flink.table.api.TableException: Unexpected error while connecting to SqlServer and validating
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:54)
+	at com.ververica.cdc.debezium.DebeziumSourceFunction.open(DebeziumSourceFunction.java:214)
+	at org.apache.flink.api.common.functions.util.FunctionUtils.openFunction(FunctionUtils.java:34)
+	at org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator.open(AbstractUdfStreamOperator.java:101)
+	at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:734)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$SynchronizedStreamTaskActionExecutor.call(StreamTaskActionExecutor.java:100)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:709)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:675)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:921)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: “Encrypt”属性设置为“true”且 “trustServerCertificate”属性设置为“false”，但驱动程序无法使用安全套接字层 (SSL) 加密与 SQL Server 建立安全连接:错误:sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。 ClientConnectionId:94e1284a-8f95-4715-9296-69697b40ad30
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:4026)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1954)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3552)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.openConnection(SqlServerValidator.java:88)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:47)
+	... 13 more
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1843)
+	... 22 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.microsoft.sqlserver.jdbc.HostNameOverrideX509TrustManager.checkServerTrusted(SQLServerTrustManager.java:88)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 30 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 38 more
+2025-11-13 19:42:23       INFO (org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager:processResourceRequirements) - Clearing resource requirements of job 8144702650806b6e6234320f3a2dfd53
+2025-11-13 19:42:23       INFO (org.apache.flink.runtime.jobmaster.JobMaster:restartTasksWithDelay) - 1 tasks will be restarted to recover the failed task 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_0.
+2025-11-13 19:42:23       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53) switched from state RUNNING to RESTARTING.
+2025-11-13 19:42:24       WARN (org.apache.flink.runtime.taskmanager.TaskManagerLocation:getHostName) - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53) switched from state RESTARTING to RUNNING.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.checkpoint.CheckpointCoordinator:restoreLatestCheckpointedStateInternal) - No checkpoint found during restore.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from CREATED to SCHEDULED.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager:processResourceRequirements) - Received resource requirements from job 8144702650806b6e6234320f3a2dfd53: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from SCHEDULED to DEPLOYING.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:deploy) - Deploying Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (attempt #1) with attempt id 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to de5d94df-f72a-40ce-abf9-57cac5d69bd8 @ 127.0.0.1 (dataPort=-1) with allocation id c60ebe3d21a4ba2ba6ff16784f262b74
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl:markExistingSlotActive) - Activate slot c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:submitTask) - Received task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1), deploy into slot with allocation id c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from CREATED to DEPLOYING.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskmanager.Task:doRun) - Loading JAR files for task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) [DEPLOYING].
+2025-11-13 19:42:24       INFO (org.apache.flink.streaming.runtime.tasks.StreamTask:loadFromApplicationOrConfigOrDefaultInternal) - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@755defe9
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.state.StateBackendLoader:fromApplicationOrConfigOrDefault) - State backend loader loads the state backend as HashMapStateBackend
+2025-11-13 19:42:24       INFO (org.apache.flink.streaming.runtime.tasks.StreamTask:createJobManagerCheckpointStorage) - Checkpoint storage is set to 'jobmanager'
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from DEPLOYING to INITIALIZING.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from DEPLOYING to INITIALIZING.
+2025-11-13 19:42:24       INFO (com.ververica.cdc.debezium.DebeziumSourceFunction:initializeState) - Consumer subtask 0 has no restore state.
+2025-11-13 19:42:24       WARN (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from INITIALIZING to FAILED with failure cause:
+org.apache.flink.table.api.TableException: Unexpected error while connecting to SqlServer and validating
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:54)
+	at com.ververica.cdc.debezium.DebeziumSourceFunction.open(DebeziumSourceFunction.java:214)
+	at org.apache.flink.api.common.functions.util.FunctionUtils.openFunction(FunctionUtils.java:34)
+	at org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator.open(AbstractUdfStreamOperator.java:101)
+	at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:734)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$SynchronizedStreamTaskActionExecutor.call(StreamTaskActionExecutor.java:100)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:709)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:675)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:921)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: “Encrypt”属性设置为“true”且 “trustServerCertificate”属性设置为“false”，但驱动程序无法使用安全套接字层 (SSL) 加密与 SQL Server 建立安全连接:错误:sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。 ClientConnectionId:6363755f-b185-4fd6-809a-988b6f248311
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:4026)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1954)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3552)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.openConnection(SqlServerValidator.java:88)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:47)
+	... 13 more
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1843)
+	... 22 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.microsoft.sqlserver.jdbc.HostNameOverrideX509TrustManager.checkServerTrusted(SQLServerTrustManager.java:88)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 30 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 38 more
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskmanager.Task:doRun) - Freeing task resources for Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1).
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:unregisterTaskAndNotifyFinalState) - Un-registering task and sending final execution state FAILED to JobManager for task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#1 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1) switched from INITIALIZING to FAILED on de5d94df-f72a-40ce-abf9-57cac5d69bd8 @ 127.0.0.1 (dataPort=-1).
+org.apache.flink.table.api.TableException: Unexpected error while connecting to SqlServer and validating
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:54)
+	at com.ververica.cdc.debezium.DebeziumSourceFunction.open(DebeziumSourceFunction.java:214)
+	at org.apache.flink.api.common.functions.util.FunctionUtils.openFunction(FunctionUtils.java:34)
+	at org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator.open(AbstractUdfStreamOperator.java:101)
+	at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:734)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$SynchronizedStreamTaskActionExecutor.call(StreamTaskActionExecutor.java:100)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:709)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:675)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:921)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: “Encrypt”属性设置为“true”且 “trustServerCertificate”属性设置为“false”，但驱动程序无法使用安全套接字层 (SSL) 加密与 SQL Server 建立安全连接:错误:sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。 ClientConnectionId:6363755f-b185-4fd6-809a-988b6f248311
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:4026)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1954)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3552)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.openConnection(SqlServerValidator.java:88)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:47)
+	... 13 more
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1843)
+	... 22 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.microsoft.sqlserver.jdbc.HostNameOverrideX509TrustManager.checkServerTrusted(SQLServerTrustManager.java:88)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 30 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 38 more
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager:processResourceRequirements) - Clearing resource requirements of job 8144702650806b6e6234320f3a2dfd53
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.jobmaster.JobMaster:restartTasksWithDelay) - 1 tasks will be restarted to recover the failed task 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_1.
+2025-11-13 19:42:24       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53) switched from state RUNNING to RESTARTING.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53) switched from state RESTARTING to RUNNING.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.checkpoint.CheckpointCoordinator:restoreLatestCheckpointedStateInternal) - No checkpoint found during restore.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from CREATED to SCHEDULED.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager:processResourceRequirements) - Received resource requirements from job 8144702650806b6e6234320f3a2dfd53: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from SCHEDULED to DEPLOYING.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:deploy) - Deploying Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (attempt #2) with attempt id 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to de5d94df-f72a-40ce-abf9-57cac5d69bd8 @ 127.0.0.1 (dataPort=-1) with allocation id c60ebe3d21a4ba2ba6ff16784f262b74
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableImpl:markExistingSlotActive) - Activate slot c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:submitTask) - Received task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2), deploy into slot with allocation id c60ebe3d21a4ba2ba6ff16784f262b74.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from CREATED to DEPLOYING.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskmanager.Task:doRun) - Loading JAR files for task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) [DEPLOYING].
+2025-11-13 19:42:25       INFO (org.apache.flink.streaming.runtime.tasks.StreamTask:loadFromApplicationOrConfigOrDefaultInternal) - No state backend has been configured, using default (HashMap) org.apache.flink.runtime.state.hashmap.HashMapStateBackend@769895ba
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.state.StateBackendLoader:fromApplicationOrConfigOrDefault) - State backend loader loads the state backend as HashMapStateBackend
+2025-11-13 19:42:25       INFO (org.apache.flink.streaming.runtime.tasks.StreamTask:createJobManagerCheckpointStorage) - Checkpoint storage is set to 'jobmanager'
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from DEPLOYING to INITIALIZING.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from DEPLOYING to INITIALIZING.
+2025-11-13 19:42:25       INFO (com.ververica.cdc.debezium.DebeziumSourceFunction:initializeState) - Consumer subtask 0 has no restore state.
+2025-11-13 19:42:25       WARN (org.apache.flink.runtime.taskmanager.Task:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from INITIALIZING to FAILED with failure cause:
+org.apache.flink.table.api.TableException: Unexpected error while connecting to SqlServer and validating
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:54)
+	at com.ververica.cdc.debezium.DebeziumSourceFunction.open(DebeziumSourceFunction.java:214)
+	at org.apache.flink.api.common.functions.util.FunctionUtils.openFunction(FunctionUtils.java:34)
+	at org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator.open(AbstractUdfStreamOperator.java:101)
+	at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:734)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$SynchronizedStreamTaskActionExecutor.call(StreamTaskActionExecutor.java:100)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:709)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:675)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:921)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: “Encrypt”属性设置为“true”且 “trustServerCertificate”属性设置为“false”，但驱动程序无法使用安全套接字层 (SSL) 加密与 SQL Server 建立安全连接:错误:sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。 ClientConnectionId:21b29bb8-b76b-4efe-8669-a95f5fbd32a6
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:4026)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1954)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3552)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.openConnection(SqlServerValidator.java:88)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:47)
+	... 13 more
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1843)
+	... 22 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.microsoft.sqlserver.jdbc.HostNameOverrideX509TrustManager.checkServerTrusted(SQLServerTrustManager.java:88)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 30 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 38 more
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskmanager.Task:doRun) - Freeing task resources for Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2).
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.taskexecutor.TaskExecutor:unregisterTaskAndNotifyFinalState) - Un-registering task and sending final execution state FAILED to JobManager for task Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1)#2 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Source: Custom Source -> Map -> Sink: Print to Std. Out (1/1) (85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2) switched from INITIALIZING to FAILED on de5d94df-f72a-40ce-abf9-57cac5d69bd8 @ 127.0.0.1 (dataPort=-1).
+org.apache.flink.table.api.TableException: Unexpected error while connecting to SqlServer and validating
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:54)
+	at com.ververica.cdc.debezium.DebeziumSourceFunction.open(DebeziumSourceFunction.java:214)
+	at org.apache.flink.api.common.functions.util.FunctionUtils.openFunction(FunctionUtils.java:34)
+	at org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator.open(AbstractUdfStreamOperator.java:101)
+	at org.apache.flink.streaming.runtime.tasks.RegularOperatorChain.initializeStateAndOpenOperators(RegularOperatorChain.java:107)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreGates(StreamTask.java:734)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskActionExecutor$SynchronizedStreamTaskActionExecutor.call(StreamTaskActionExecutor.java:100)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restoreInternal(StreamTask.java:709)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.restore(StreamTask.java:675)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:921)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: “Encrypt”属性设置为“true”且 “trustServerCertificate”属性设置为“false”，但驱动程序无法使用安全套接字层 (SSL) 加密与 SQL Server 建立安全连接:错误:sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target。 ClientConnectionId:21b29bb8-b76b-4efe-8669-a95f5fbd32a6
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:4026)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1954)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:3552)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:3172)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:3014)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1836)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:1246)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.openConnection(SqlServerValidator.java:88)
+	at com.ververica.cdc.connectors.sqlserver.SqlServerValidator.validate(SqlServerValidator.java:47)
+	... 13 more
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1843)
+	... 22 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.microsoft.sqlserver.jdbc.HostNameOverrideX509TrustManager.checkServerTrusted(SQLServerTrustManager.java:88)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 30 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 38 more
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.resourcemanager.slotmanager.DeclarativeSlotManager:processResourceRequirements) - Clearing resource requirements of job 8144702650806b6e6234320f3a2dfd53
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.jobmaster.JobMaster:restartTasksWithDelay) - 1 tasks will be restarted to recover the failed task 85f9348cc4ab1171b4eaef91ddca3bd5_cbc357ccb763df2852fee8c4fc7d55f2_0_2.
+2025-11-13 19:42:25       INFO (org.apache.flink.runtime.executiongraph.ExecutionGraph:transitionState) - Job Flink SQL Server CDC Job - Fixed (8144702650806b6e6234320f3a2dfd53) switched from state RUNNING to RESTARTING.
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager:shutdown) - Shutting down TaskExecutorLocalStateStoresManager.
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.blob.PermanentBlobCache:close) - Shutting down BLOB cache
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.state.TaskExecutorStateChangelogStoragesManager:shutdown) - Shutting down TaskExecutorStateChangelogStoragesManager.
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.blob.BlobServer:close) - Stopped BLOB server at 0.0.0.0:59771
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.blob.TransientBlobCache:close) - Shutting down BLOB cache
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.filecache.FileCache:shutdown) - removed file cache directory C:\Users\29065\AppData\Local\Temp\flink-dist-cache-33d594ee-8ae0-492b-96ea-8d8319b41fea
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.io.disk.FileChannelManagerImpl:lambda$getFileCloser$0) - FileChannelManager removed spill file directory C:\Users\29065\AppData\Local\Temp\flink-netty-shuffle-7f74ea68-1a6b-46a3-af4c-ebd12a5bd662
+2025-11-13 19:42:26       INFO (org.apache.flink.runtime.io.disk.FileChannelManagerImpl:lambda$getFileCloser$0) - FileChannelManager removed spill file directory C:\Users\29065\AppData\Local\Temp\flink-io-a4596971-e4a1-4c21-9e63-b74b9eeae048
+
+进程已结束，退出代码为 130
