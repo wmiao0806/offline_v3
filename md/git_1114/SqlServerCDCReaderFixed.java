@@ -12,7 +12,9 @@ public class SqlServerCDCReaderFixed {
 
     public static void main(String[] args) throws Exception {
 
-        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.KafkaAsyncJoinToHBase
+        DbusSyncSqlserverOmsSysData2Kafka
+        DbusSyncPostgreSqlOmsSysData2KafkagetExecutionEnvironment();
         env.setParallelism(1);
         env.enableCheckpointing(5000);
 
